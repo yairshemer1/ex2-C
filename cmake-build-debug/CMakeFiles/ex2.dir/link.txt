@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -Wl,--enable-auto-import CMakeFiles/ex2.dir/TreeAnalyzer.c.o CMakeFiles/ex2.dir/queue.c.o  -o ex2.exe -Wl,--out-implib,libex2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

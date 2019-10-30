@@ -1,0 +1,32 @@
+c_ex2_late
+yair.shemer
+204371983
+######
+
+Description:
+This exercise was a Tree Analyzer - given a text file with certain format, and two keys
+representing nodes, the program had to print the following information -
+* invalid input if the input was incorrect
+* graph is not a tree if the graph given was not a proper tree
+* otherwise, the program would print the root of the tree, number of vertices and edges,
+  highest and lowest height and the shortest route between the two given keys.
+
+First of all, I used Graph struct to describe a graph, Node struct to describe a node, in a way
+that they hold information that would help me print the information in the correct running time
+O(1) for number of edges, O(n) for finding root by running on all vertices and check who has no
+parents, O(n^2) for the diameter using BFS from all nodes.
+I decided to read the text file this way - read the first line to get the number of vertices in the
+graph, and allocate space for those nodes. After that, reading line by line, I determine the
+children for each node, until EOF is reached.
+Now after the graph is initialized, all had to be done is to check if the graph is a tree -
+* if the number of edges is equal or higher then number of vertices - not a tree by def.
+* if a node has 0 parents - he is a potential root. If the root is already caught, it means that
+  it is not a tree.
+* if a node has more then 2 parents - it is definitely not a tree.
+* making sure the graph is connected using 'explore' algorithm.
+
+After being sure the graph is a tree, all had to be done is calculate the necessary details
+by simple functions, using BFS from various of nodes, and print it.
+
+
+

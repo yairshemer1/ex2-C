@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/Yair Shemer/Desktop/University/2b/C/ex2/TreeAnalyzer.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+queue.h
+/cygdrive/c/Users/Yair Shemer/Desktop/University/2b/C/ex2/queue.h
+
+/cygdrive/c/Users/Yair Shemer/Desktop/University/2b/C/ex2/queue.h
+
